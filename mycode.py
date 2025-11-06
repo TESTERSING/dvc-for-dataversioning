@@ -13,7 +13,7 @@ os.makedirs("data", exist_ok=True)
 data_df = pd.DataFrame({
     "id": range(1, 11),  # 10 sample IDs
     "review": [
-        "Excellent service and friendly staff",
+        "Excellent service and friendly staff.v2",
         "Poor experience, will not come again",
         "Average service but good food",
         "Exceptional experience, very satisfied",
@@ -38,7 +38,7 @@ print("✅ data/data.csv created successfully!")
 process_data_df = pd.DataFrame({
     "id": data_df["id"],
     "review": data_df["review"],
-    "experience": np.random.randint(1, 10, size=10),
+    "experience": np.random.randint(1, 20, size=10),
     "service": np.random.randint(1, 10, size=10),
     "quality": np.random.randint(1, 10, size=10)
 })
